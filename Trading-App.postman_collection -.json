@@ -1,0 +1,674 @@
+{
+	"info": {
+		"_postman_id": "e43efbff-7e5f-4f82-b389-7b6b636e64fa",
+		"name": "Trading-App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18249971"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"user2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "user",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Single User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"selim\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove All Users",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Portfolio",
+			"item": [
+				{
+					"name": "Create Portfolio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userID\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/portfolio/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"portfolio",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Portfolios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/portfolio/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"portfolio",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "user",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Single Portfolio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/portfolio/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"portfolio",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Portfolio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"selim\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/portfolio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"portfolio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Portfolio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/portfolio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"portfolio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove All Portfolios",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/portfolio/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"portfolio",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Share",
+			"item": [
+				{
+					"name": "Create Share",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"symbol\": \"PRX\",\r\n    \"totalShares\": 100,\r\n    \"shareRate\": 36.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/share/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"share",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Shares",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/share/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"share",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "user",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Single Share",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/share/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"share",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Share",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shareRate\": 200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/share/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"share",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Share",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/share/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"share",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove All Shares",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/share/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"share",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trade",
+			"item": [
+				{
+					"name": "Create Trade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"shareId\": 1,\r\n    \"quantity\": 36,\r\n    \"price\": 36.00,\r\n    \"type\": \"BUY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/trade/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trade",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Trades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/trade/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trade",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "user",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Single Trade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/trade/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trade",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Trade",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/trade/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trade",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove All Trades",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/trade/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trade",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Share Holding",
+			"item": [
+				{
+					"name": "Create ShareHolding",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shareID\": 1,\r\n    \"totalSharesBought\": 22\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/shareHolding/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shareHolding",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All ShareHoldings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/shareHolding/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shareHolding",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "user",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Single ShareHolding",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/shareHolding/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shareHolding",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove ShareHolding",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/shareHolding/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shareHolding",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove All ShareHoldings",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/shareHolding/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shareHolding",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
