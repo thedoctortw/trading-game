@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var shareController = require("../controllers/share");
+var shareController = require("../controllers/shareHolding");
 
 // Create a new share
 router.post('/', shareController.create);

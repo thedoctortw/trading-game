@@ -5,23 +5,26 @@ module.exports = (sequelize, Sequelize) => {
           autoIncrement: true,
           primaryKey: true
         },
-        portfolioID: {
-          type: Sequelize.INTEGER,
-          allowNull: false,
-          references: {
-            model: 'Portfolio',
-            key: 'id'
-          }
-        },
         shareID: {
           type: Sequelize.INTEGER,
           allowNull: false,
           references: {
-            model: 'Share',
-            key: 'id'
+            model: 'Shares',
+            key: 'id',
+            onDelete: 'cascade'
           }
         },
-        quantity: {
+        totalSharesBought: {
+          type: Sequelize.INTEGER,
+          defaultValue:0,
+          allowNull: false
+        },
+        totalSharesSold: {
+          type: Sequelize.INTEGER,
+          defaultValue:0,
+          allowNull: false
+        },
+        availableShares: {
           type: Sequelize.INTEGER,
           allowNull: false
         }

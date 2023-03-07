@@ -23,5 +23,6 @@ db.user = require("./user.model.js")(sequelize, Sequelize);
 db.share = require("./share.model.js")(sequelize, Sequelize);
 db.portfolio = require("./portfolio.model.js")(sequelize, Sequelize);
 db.shareHolding = require("./shareHolding.model.js")(sequelize, Sequelize);
+db.trade = require("./trade.model.js")(sequelize, Sequelize);
 
 module.exports = db;

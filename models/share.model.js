@@ -6,7 +6,7 @@ module.exports = (sequelize, Sequelize) => {
             primaryKey: true
         },
         symbol: {
-            type: Sequelize.STRING,
+            type: Sequelize.STRING(3),
             allowNull: false
         },
         totalShares: {
@@ -17,9 +17,9 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.DECIMAL(10,2),
             allowNull: false
         },
-        previousPrices: {
-            type: Sequelize.ARRAY(Sequelize.DECIMAL(10,2)),
-            allowNull: true
+        shareHolding: {
+            type: Sequelize.ARRAY(Sequelize.JSONB),
+            defaultValue: []
         }
     });
     return Share;
