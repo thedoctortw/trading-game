@@ -1,4 +1,20 @@
 # trading-game
+Project Description: An arbitrarily trading game developed by a startup in a very short span of time called “Super Traders” . The purpose of the application is to educate users on the terminology used in trading of shares. 
+
+Make sure to edit db.config.js for your own environment:
+module.exports = {
+    HOST: "localhost",
+    USER: "me",
+    PASSWORD: "password",
+    DB: "api",
+    dialect: "postgres",
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
+  };
 
 missing parts due to time constraint:
 - doesn't update portfolio based on bought or sold shares
