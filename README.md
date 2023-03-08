@@ -6,3 +6,4 @@ missing parts due to time constraint:
 - jsDocs
 - BulkCreating trades logs (you can create them manually via postman Create Trade endpoint)
 - in commonHelpers I generalized CRUD operations for sequelize but I didn't apply them on everywhere. It can drastically reduce the amount of code used.
+- I could've changed the naming convention in models. It doesn't follow the standard in other parts of the codebase.
